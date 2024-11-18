@@ -39,6 +39,8 @@ Create a database for a task management system using PostgreSQL. The database sh
 - status_id: Foreign key referencing id in the status table (INTEGER type),
 - user_id: Foreign key referencing id in the users table (INTEGER type).
 
+![ER Diagram](assets/er_diagram.png)
+
 2. Ensure that the email field in the users table and the name field in the status table are unique.
 
 3. Set up relationships between tables so that deleting a user automatically deletes all their tasks (cascade deletion).
@@ -89,7 +91,7 @@ Each document in your database should have the following structure:
 
 ```json
 {
-"\_id": ObjectId("60d24b783733b1ae668d4a77"),
+"_id": ObjectId("60d24b783733b1ae668d4a77"),
 "name": "barsik",
 "age": 3,
 "features": ["walks in slippers", "allows petting", "ginger"]
